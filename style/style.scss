@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "roboto",sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(210, 36%, 96%);;
+}
+.delete{
+    color:red;
+    display: inline-block;
+    
+}
+.trash{
+    width: 100%;
+ height: 40px;
+ overflow: hidden;
+}
+.btn{
+    padding: 10px;
+    font-size: 18px;
+    outline:none;
+    border:none;
+    margin:10px;
+    color: #FFF;
+    border-radius: 5px;
+    background-color: darkblue;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    color:rgb(12, 10, 10);
+    font-weight: 600;
+    max-width: 100%;
+    height: 60px;
+    background-color: yellow;
+    font-size: 40px;
+}
+.search-bar{
+width:100%;
+input{
+    width:100%;
+    padding: 10px;
+    border:none;
+    outline:none;
+    border-radius: 4px;
+}
+}
+.notes-area{
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+   flex-wrap: wrap;
+
+}
+
+.notes,.notes-insert{
+    background: #FFF;
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    border: none;
+    outline: none;
+    line-height: 30px;
+    margin: 20px;
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+   
+    font-size: 18px;
+    border-radius: 5px;
+   
+}
+.notes::-webkit-scrollbar {
+    display: none;
+  }
+  pre{
+      width:300px;
+      word-wrap: break-word;
+  }
+
+
+@media screen and (max-width:700px) {
+    .notes-area{
+        flex-direction: column;
+    }
+    .notes{
+        width:90%;
+        margin:20px;
+        height: 300px;
+    }
+   
+    
+}
